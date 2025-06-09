@@ -1,201 +1,162 @@
- <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sobre a Gaisax Empreendimentos</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0px;
-      padding: 0px;
-    }
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
 
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+.descricao1 {
+background-color:#083365;
+width: 100%;
+height: 250px;
+text-align: center;
 
-    header {
-      background-color: #002d62;
-      color: #ffffff;
-      padding: 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-     
-    }
+}
 
-    header h1 {
-      font-size: 60px;
-      text-align: center;
-      flex: 1;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    a {
-      color: #fff;
-      font-size: 23px;
-    }
-    a:hover {
-      text-decoration: underline;
-      background-color: #3b536c;
-  
-      color: #fff;
-      font-size: 28px;
-      border-radius: 12px;
-    }
+.container {
+  width: 100%;
+  margin: auto;
+  padding: 0px;
+  border: none;
+}
 
-    .fundoimobiliaria {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .tc {
-      text-align: center;
-      color: #003673;
-      font-size: 30px;
-      margin-bottom: 20px;
-    }
-    .tc2 {
-      text-align: center;
-      color: #c7c7d5;
-      font-size: 30px;
-      margin-bottom: 20px;
-    }
-
-
-    p {
-      margin-bottom: 20px;
-    }
-
-    #missao {
-      font-style: italic;
-      color: #060967;
-    }
-    em strong {
-    color: #002d62;
-    }
-
-    .beneficios {
-      background-color: #3b536c;
-      padding: 40px;
-      text-align: center;
-    }
-
-    .beneficios ul li {
-      list-style: none;
-      padding: 0;
-      margin-bottom: 30px;
-    }
-    .beneficios ul li img {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .beneficios .itens {
-      background-color: #002d62;
-      color: #fff;
-      margin: 10px auto;
-      padding: 12px;
-      max-width: 800px;
-      border-radius: 6px;
-      font-size: 25px
-    }
-
-    .imagembeneficios {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-
-   footer {
-  background-color: #002d62;
-  color: white;
-  padding: 20px;
- text-decoration: none;
-  font-weight: bold;
+.imagens {
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.formato {
+  width: 30%;
+  margin-bottom: 100px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+
+}
+.formato:hover {
+transform: scale(1.100);
+
+}
+.formato img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+p {
+    margin-top: 20px;
+    color: white;
+}
+
+h3, h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: #002d62;
+  color: #ffffff;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.busca {
+  text-align: center;
+  margin: 30px;
+}
+
+.busca input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+header h3 {
+  font-size: 45px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  a {
+  color: #fff;
+  font-size: 30px;
+}
+a:hover {
+  text-decoration: underline;
+  background-color: #3b536c;
+
+  color: #fff;
+  font-size: 35px;
+  border-radius: 12px;
+}
+.tc {
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  
+}
+footer {
+background-color: #002d62;
+color: white;
+padding: 20px;
+
+display: flex;
+justify-content: space-between; 
+align-items: center; 
+text-decoration: none;
+font-weight: bold;
 }
 
 footer a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-    align-items: center; 
+color: #ffffff;
+text-decoration: none;
+font-weight: bold;
+align-items: center; 
+
 }
 
 footer a:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
-  img {
-margin-right: 25px;
 
+em strong {
+color: #ababae;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.descricao2 {
+margin-top: 10px;
+position: relative; 
+min-height: 200px;   
+padding-bottom: 30px; 
+}
 
-  }  
-
-
-  
-      
-  </style>
-</head>
-<body>
-
-  <header>
-    <img src="/img/Gaisax.png" width="130px" height="130px">
-    <a href="cadastro.html">Cadastro de imóveis</a>
-    <h1>Gaisax Empreendimentos</h1>
-    <a href="imoveis.html">Imóveis</a>
-  </header>
-
-  <img src="/img/fundoImobiliaria.jpg" alt="Fachada da Imobiliária" class="fundoimobiliaria" /> 
-  
-  <div class="container">
-    <h3 class="tc">Quem Somos</h3>
-    <p>
-      Localizada no coração da cidade, a <strong>Gaisax Empreendimentos</strong> traz para o mercado imobiliário o que há de melhor para a realização do seu sonho da casa própria. Seja casa, apartamento ou chácara, temos o imóvel ideal para você.
-    </p>
-    <p>
-      Fundada em 2020, a Gaisax já é destaque na cidade e conquista novos clientes a cada dia com confiança, transparência e atendimento de qualidade.
-    </p>
-      <p id="missao"><em> Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes". 
-   </strong></em></p>
-    <p>
-      Contamos com uma equipe experiente, atualizada e comprometida com a realização do seu sonho. Nosso atendimento é focado em agilidade, ética e excelência.
-    </p>
-
-  </div>
-  <hr color="black">
-  <div class="beneficios">
-    <h1 class="tc2">Nossos Diferenciais</h1>
-    <ul>
-      <li class="itens">Atendimento Personalizado</li>
-      <li class="itens">Espaços Exclusivos</li>
-      <li class="itens">Localização Privilegiada</li>
-      <li class="itens">Equipe Especializada</li>
-    </ul>
-  
-  <img src="/img/beneficios.jpg" alt="Equipe em atendimento" class="imagembeneficios" /> 
-
-
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Gaisax Empreendimentos. Todos os direitos reservados.</p>
-    <a href="faq.html"> FAQ </a>
-  </footer>
-  <hr color="black">
-</body>
-</html>
+.descricao2 h5 {
+position: absolute;
+bottom: 0;
+right: 0;
+font-size: 16px;
+color: rgb(15, 186, 15);
+margin: 10px;
+}
+.descricao2 ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-top: 5px;
+  text-align: justify;
+  color: black;
+}
+.descricao2 b {
+  display: block;
+  margin-bottom: 10px;
+}
