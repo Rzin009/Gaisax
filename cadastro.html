@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Imóveis</title>
+ <link rel="stylesheet" href="cadastro.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+   padding: 0%;
+    }
+  header {
+      background-color: #002d62;
+      color: #ffffff;
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     
+    }
+
+    form {
+      max-width: 700px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #003673;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00509e;
+    }
+
+     footer {
+  background-color: #002d62;
+  color: white;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+   text-decoration: none;
+  font-weight: bold;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+    align-items: center; 
+
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+ a {
+      color: #fff;
+    }
+    a:hover {
+      text-decoration: underline;
+      background-color: #3b536c;
+  
+      color: #fff;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+ .imovelimg {
+      width: 100%;
+      height: 800px;
+      object-fit: cover;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+     <a href="index.html">Início</a>
+     <h1>Cadastro de Imóveis</h1>
+     <p>Preencha os dados abaixo para cadastrar seu imóvel conosco</p>
+     <a href="imoveis.html">Imóveis</a>
+  </header>
+    <img src="/img/Gaisax cadastro.png" class="imovelimg" /> 
+  <form action="#" method="POST">
+    <label for="nome">Nome do Proprietário:</label>
+    <input type="text" placeholder="Caracter" id="nome" name="nome" required>
+
+    <label for="email">E-mail para contato:</label>
+    <input type="email" placeholder="E-mail do Propietário" id="email" name="email" required>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" placeholder="Telefone do Propietário (--) 00000-0000" id="telefone" name="telefone" required>
+
+    <label for="tipo" > Tipo de imóvel:</label>
+    <select id="tipo"  name="tipo"  required>
+      <option value=""> --Selecionar-- </option>
+      <option value="casa">Casa</option>
+      <option value="apartamento">Apartamento</option>
+      <option value="chácara">Chácara</option>
+      <option value="terreno">Terreno</option>
+      <option value="comercial">Comercial</option>
+    </select>
+
+    <label for="endereco">Endereço:</label>
+    <input type="text" placeholder="Endereço do Propietário" id="endereco" name="endereco" required>
+
+    <label for="descricao">Descrição do imóvel:</label>
+    <textarea id="descricao" placeholder="Descrição sobre o imóvel, local, comodos e etc" name="descricao" rows="5" required></textarea>
+
+    <label for="preco">Preço desejado (R$):</label>
+    <input type="number" placeholder="R$0,00" id="preco" name="preco" required>
+
+    <label for="fotos">Fotos do imóvel:</label>
+    <input type="file" id="fotos" name="fotos" multiple accept="image/*">
+
+    <button type="submit">Cadastrar Imóvel</button>
+  </form>
+
+  <footer>
+    <p>&copy; 2025 Gaisax Empreendimentos | Todos os direitos reservados. </p>
+ 
+         <a href="faq.html"> FAQ </a>
+  </footer>
+
+</body>
+</html>

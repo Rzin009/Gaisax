@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imóveis Disponíveis</title>
+  <link rel="stylesheet" href="imoveis.css">
+  <style>
+     * {
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+.descricao1 {
+    background-color:#083365;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    
+}
+
+    .container {
+      width: 100%;
+      margin: auto;
+      padding: 0px;
+      border: none;
+    }
+
+    .imagens {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .formato {
+      width: 30%;
+      margin-bottom: 100px;
+      border: 1px solid black;
+      box-sizing: border-box;
+      padding: 10px;
+      transition: transform 0.3s ease;
+      border-radius: 10px;
+    
+    }
+.formato:hover {
+    transform: scale(1.100);
+
+}
+    .formato img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 7px;
+    }
+    p {
+        margin-top: 20px;
+        color: white;
+    }
+
+    h3, h1 {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+header {
+      background-color: #002d62;
+      color: #ffffff;
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .busca {
+      text-align: center;
+      margin: 30px;
+    }
+
+    .busca input {
+      width: 60%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    header h3 {
+      font-size: 26px;
+      text-align: center;
+    }
+      a {
+      color: #fff;
+    }
+    a:hover {
+      text-decoration: underline;
+      background-color: #3b536c;
+  
+      color: #fff;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+    .tc {
+      text-align: center;
+      color: #ffffff;
+      font-size: 30px;
+      margin-bottom: 20px;
+      padding-top: 30px;
+      
+    }
+ footer {
+  background-color: #002d62;
+  color: white;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+   text-decoration: none;
+  font-weight: bold;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+    align-items: center; 
+
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+    
+    em strong {
+color: #ababae;
+font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+   .descricao2 {
+  margin-top: 10px;
+  position: relative; 
+  min-height: 200px;   
+  padding-bottom: 30px; 
+}
+
+.descricao2 h5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 16px;
+  color: rgb(15, 186, 15);
+  margin: 10px;
+}
+.descricao2 ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      margin-top: 5px;
+      text-align: justify;
+      color: black;
+    }
+    .descricao2 b {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+
+    
+  </style>
+</head>
+<body>
+    <header>
+  
+   <a href="index.html">Início</a>
+   <div class="titulos">
+    <h3>IMÓVEIS DISPONÍVEIS</h3>
+    <h3>Clique no imóvel desejado para mais informações</h3>
+  </div>
+    <a href="cadastro.html">Cadastro de Imóveis</a>
+    </header>
+  <hr color="black">
+  <div class="busca">
+    <input type="text" placeholder="Buscar imóvel por cidade, tipo, bairro...">
+  </div>
+
+
+
+
+         
+    <div class="imagens">
+
+    <div class="formato">
+      <img src="/img/c.jpg" alt="Imagem do imóvel 1">
+      <div class="descricao2">
+        <b>|| Soroca - SP || Rua Soroquiana ||</b>
+        <ul>
+          <li>2 quartos</li>
+          <li>2 banheiros</li>
+          <li>Sala ampla, cozinha, lavanderia</li>
+          <li>Jardim, piscina e área de churrasco</li>
+        </ul>
+          <b><h5>R$0,25</h5></b>
+      </div>
+    </div>
+
+    <div class="formato">
+      <img src="/img/e.png" alt="Imagem do imóvel 2">
+      <div class="descricao2">
+        <b>|| Pirapólis - SP || Rua Pirapoliana ||</b>
+        <ul>
+          <li>Casa com dois andares</li>
+          <li>3 quartos, 3 banheiros</li>
+          <li>Garagem para 2 carros</li>
+          <li>Quintal, varanda, sala e cozinha</li>
+        </ul>
+          <b><h5>R$0,5</h5></b>
+      </div>
+    </div>
+
+    <div class="formato">
+      <img src="/img/a.jpg" alt="Imagem do imóvel 3">
+      <div class="descricao2">
+        <b>|| Pirapora - SP || Rua Argemiro Peixoto ||</b>
+        <ul>
+          <li>Casa de 2 andares</li>
+          <li>4 quartos, 3 banheiros</li>
+          <li>Sala espaçosa, cozinha, lavanderia</li>
+          <li>Piscina</li>
+        </ul>
+          <b><h5>R$25000000</h5></b>
+      </div>
+    </div>
+
+    <div class="formato">
+      <img src="/img/d.jpg" alt="Imagem do imóvel 4">
+      <div class="descricao2">
+        <b>|| Sorocaba - SP || Rua Sorocabeira ||</b>
+        <ul>
+          <li>4 quartos, 3 banheiros</li>
+          <li>2 garagens, sala ampla</li>
+          <li>Cozinha, 2 lavanderias</li>
+          <li>Quintal, varanda e área de churrasco</li>
+        </ul>
+          <b><h5>R$1</h5></b>
+      </div>
+    </div>
+
+    <div class="formato">
+      <img src="/img/b.png" alt="Imagem do imóvel 5">
+      <div class="descricao2">
+        <b>|| Juquitiba - SP || Rua Jequitis ||</b>
+        <ul>
+          <li>Chácara com área verde</li>
+          <li>Pomar e espaço para eventos</li>
+          <li>Piscina e área ampla de laze </li>
+           <li>3 quartos</li>
+          <li>3 banheiros</li>
+          <li>1 lavanderia </li>
+           <li>1 cozinha </li>
+        </ul>
+    <b><h5>R$0,10</h5></b>
+      </div>
+    </div>
+
+    <div class="formato">
+      <img src="/img/f.jpg" alt="Imagem do imóvel 6">
+      <div class="descricao2">
+        <b>|| Mauá || Rua Bahianinho de Mauá ||</b>
+        <ul>
+          <li>Sobrado de 3 andares</li>
+          <li>4 quartos, 3 banheiros, escritório</li>
+          <li>2 lavanderias, quintal e sala ampla</li>
+          <li>Garagem e localização privilegiada</li>
+          <li>1 cozinha</li>
+        </ul>
+          <b><h5>R$0,50</h5></b>
+      </div>
+    </div>
+
+  </div>
+  
+    <div class="descricao1">
+            
+            
+   <h1 class="tc"> Nossos Imóveis </h1>
+
+<p> Na Gaisax Empreendimentos, você encontra uma seleção completa de imóveis que se adaptam ao seu estilo de vida. São <em> <strong>casas, apartamentos, terrenos e imóveis comerciais
+    localizados nas melhores regiões da cidade</strong></em> </p> <p> com opções que atendem desde quem busca o primeiro imóvel até grandes investidores. Com foco em qualidade, segurança e </p>
+<p> valorização, oferecemos soluções personalizadas para quem deseja comprar, <em> <strong>vender ou alugar com total tranquilidade. Aqui, seu sonho tem endereço certo. </strong></em></p>
+
+</div>
+  
+ <footer>
+    <p>&copy; 2025 Gaisax Empreendimentos | Todos os direitos reservados. </p>
+ 
+         <a href="faq.html"> FAQ </a>
+  </footer>
+
+    </div>
+</body>
+</html>
